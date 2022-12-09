@@ -12,31 +12,38 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-67a70105.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-872bd3f4.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-80922366.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-19b902cb.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/blog/_page.svelte-6246c6c9.js">
+		<link rel="modulepreload" href="./_app/immutable/modules/pages/blog/_page.js-0f953bbe.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page-dce8d905.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<main><h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p></main>
+<main><h1>Blog</h1>
+
+<ul><li><h2 class="post-title"><a href="/blog/hello-world">Hello World
+				</a></h2>
+			<div class="published-date"></div>
+			
+		</li></ul></main>
 
 
-		<script type="module" data-sveltekit-hydrate="qelhnt">
+		<script type="module" data-sveltekit-hydrate="p5u7kt">
 			import { start } from "./_app/immutable/start-ed28bd71.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="qelhnt"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="p5u7kt"]').parentNode,
 				version: "1670622237691",
 				hydrate: {
-					node_ids: [0, 2],
+					node_ids: [0, 3],
 					data: [null,null],
 					form: null
 				}
 			});
 		</script>
-	</div>
+	<script type="application/json" data-sveltekit-fetched data-url="/api/posts">{"status":200,"statusText":"","headers":{},"body":"[{\"meta\":{\"title\":\"Hello World\",\"date\":\"2022-11-20T00:00:00.000Z\",\"tags\":[\"sveltekit\"]},\"path\":\"/blog/hello-world\"}]"}</script></div>
 	</body>
 </html>
