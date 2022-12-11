@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'robotomono': ['Roboto Mono', 'monospace'],
+        'rubik' : ['Rubik', 'sans-serif']
+      },
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

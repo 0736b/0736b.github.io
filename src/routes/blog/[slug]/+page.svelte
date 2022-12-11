@@ -1,16 +1,9 @@
 <script>
-	// import { format } from 'date-fns';
-	// import Fa from 'svelte-fa/src/fa.svelte';
-	// import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 	export let data;
 	const { title, date, tags, Content } = data;
 </script>
 
-<article>
-	<h1>{title}</h1>
-	<p class="publish-date">
-		<!-- <Fa icon={faCalendar} />
-		{format(new Date(date), 'EEEE, LLLL d, yyyy')} -->
-	</p>
-	<Content />
-</article>
+<div class="container mx-auto max-w-3xl font-rubik my-20">
+	<h1 class="font-bold mb-5 text-5xl">{title}</h1>
+	<article class="prose prose-neutral lg:prose-xl"><Content/></article>
+</div>
