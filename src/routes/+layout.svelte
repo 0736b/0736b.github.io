@@ -12,9 +12,10 @@
 
 
 <div class="container mx-auto max-w-3xl font-rubik text-xl text-center my-8 text-[#D4D4D4]">
-	<a href="/" class="font-semibold uppercase px-4">Home</a>
-	<a href="/blog" class="font-semibold uppercase px-4">Blog</a>
-	<a href="/" class="font-semibold uppercase px-4">Project</a>
+	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Home</a>
+	<a href="/blog" class="font-semibold uppercase px-4 text-glow hover:text-white">Blog</a>
+	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Project</a>
+	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Contact</a>
 </div>
   
 

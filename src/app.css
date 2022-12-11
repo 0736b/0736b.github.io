@@ -5,4 +5,11 @@ html {
 }
 @tailwind components;
 
+.text-active {
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+.text-glow:hover {
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
 @tailwind utilities;
