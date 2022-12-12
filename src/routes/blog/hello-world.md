@@ -1,63 +1,72 @@
 ---
-title: SvelteKit .env secrets
-date: 2021-06-22
-tags: SvelteKit, JavaScript, TailwindCSS
+title: Hello World!
+date: 2022-12-10
+tags: mdsvex
 ---
 
-So SvelteKit is super awesome n' all and the best thing ever but have
-you ever tried to use a `.env` secret that you didn't want exposed on
-the client?
+### (This is just a testing markdown blog.)
 
-SvelteKit uses [Vite] and it has a specific way to reference [Env
-Variables and Modes], you reference a `.env` variable with
-`import.meta.env.VITE_NAME_OF_VARIABLE` the `VITE_*` prefix means in
-SvelteKit it makes that variable available on the client.
+### Android Studio
+#### Fix: Simulator start failed
+Open text editor (eg. notepad)
+Type this code:
+```
+Vulkan=off
+GLDirectMem=on
+```
+Save the file as "advancedFeatures.ini" in .android directory. If your user is named Admin, under windows it would be: C:\Users\Admin.android\advancedFeatures.ini.
 
-## What if you have a secret key?
+Run your app.
 
-So if you want a secret key that's not exposed to the client then,
-what? Remove the `VITE_*` prefix? Well, no, so, how to have secrets??
-
-The answer is don't use Vite and instead use something to load the
-variables from the `.env` file.
-
-Use [env-cmd] or [dotenv] or whatever you want to use to ensure the
-runtime `process.env` is populated in dev.
-
-## Example
-
-Here I have defined my `.env` file at the root of my project:
-
-```python
-VITE_CLIENT_VARIABLE=wheeeeeeeee
-SUPER_SECRET_SECRET=shhhhhh
+### WSL Install NPM
+```
+- sudo apt-get install curl
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+- ปิด terminal แล้วเปิดใหม่
+- nvm install --lts
 ```
 
-Then I've created a `secret.js` file to access my secret:
-
-```js
-export const API_URL = process.env['SUPER_SECRET_SECRET']
+#### First-time setup
 ```
+First-time setup
 
-Then I've added `env-cmd` to my `dev` script in my `package.json` so
-that `process.env` has the super secret secret populated:
+Install NPM
+- sudo apt-get install curl
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+- ปิด terminal แล้วเปิดใหม่
+- nvm install --lts
 
-```json
-"scripts": {
-  "dev": "env-cmd svelte-kit dev",
+1) git clone
+
+2) cd ProjectFolder
+
+3) sudo chown -R $(whoami) .
+
+4) docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+
+5) ./vendor/bin/sail up -d
+
+6) ./vendor/bin/sail artisan key:generate
+
+7) ./vendor/bin/sail artisan config:cache
+
+8) npm install
+
+9) npm run dev
+
+10) ./vendor/bin/sail artisan migrate
+
+-------------------------------------------------------------------------------
+Run
+
+1) ./vendor/bin/sail up -d
+
+2) npm run dev
+
+
 ```
-
-Now I can access my super secret secret and have client side variables
-too.
-
-## Thanks!
-
-A kind thank you to Discord users `Xyo` and especially `saikatdas0790`
-on the Svelte Discord `svelte-kit` channel for helping me out with
-this!
-
-[vite]: https://vitejs.dev/
-[env variables and modes]:
-  https://vitejs.dev/guide/env-and-mode.html#env-variables
-[env-cmd]: https://www.npmjs.com/package/env-cmd
-[dotenv]: https://www.npmjs.com/package/dotenv
