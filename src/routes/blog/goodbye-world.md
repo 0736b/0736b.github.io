@@ -1,7 +1,7 @@
 ---
-title: SvelteKit .env secrets
+title: Virtual Machine setup for Game-hacking
 date: 2021-06-22
-tags: SvelteKit, JavaScript, TailwindCSS
+tags: Virtual Machine, Windows, Game-hacking
 ---
 
 So SvelteKit is super awesome n' all and the best thing ever but have
