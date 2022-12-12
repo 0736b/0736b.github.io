@@ -1,6 +1,10 @@
 {
+  "src/noise.gif": {
+    "file": "_app/immutable/assets/noise-c06d23dd.gif",
+    "src": "src/noise.gif"
+  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-abb4620e.js",
+    "file": "_app/immutable/start-5394887c.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -17,14 +21,17 @@
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-478631fb.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-38d33ff4.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
       "_index-e5b41c0d.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-c8be4964.css"
+      "_app/immutable/assets/_layout-90cd35b7.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/noise-c06d23dd.gif"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -37,7 +44,7 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-7b8aa047.js",
+    "file": "_app/immutable/components/pages/_page.svelte-c8c57bbb.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -113,7 +120,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-8825b75f.js",
+    "file": "_app/immutable/chunks/0-8ad56415.js",
     "src": ".svelte-kit/generated/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
@@ -130,7 +137,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-d0ae1876.js",
+    "file": "_app/immutable/chunks/2-c80de1f0.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
@@ -164,7 +171,7 @@
     ]
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-c8be4964.css",
+    "file": "_app/immutable/assets/_layout-90cd35b7.css",
     "src": "src/routes/+layout.css"
   }
 }

@@ -15,7 +15,6 @@
 	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Home</a>
 	<a href="/blog" class="font-semibold uppercase px-4 text-glow hover:text-white">Blog</a>
 	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Project</a>
-	<a href="/" class="font-semibold uppercase px-4 text-glow hover:text-white">Contact</a>
 </div>
   
 

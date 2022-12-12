@@ -12,4 +12,16 @@ html {
     text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
 }
 
+.noise::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: .025;
+    z-index: 1000;
+    pointer-events: none;
+    background: url(noise.gif);
+}
 @tailwind utilities;
