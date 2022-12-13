@@ -1,7 +1,7 @@
 ---
-title: Hello World!
-date: 2022-12-10
-tags: SvelteKit, JavaScript
+title: Goodbye World!
+date: 2022-12-13
+tags: Python
 ---
 
 ### (This is just a testing markdown blog.)
