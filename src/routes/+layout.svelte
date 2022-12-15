@@ -21,7 +21,7 @@
 
 {#key data.currentRoute}
 	<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
-		<div class="container mx-auto max-w-3xl font-rubik">
+		<div class="container mx-auto max-w-6xl font-rubik">
 			<slot />
 		</div>
 	</main>

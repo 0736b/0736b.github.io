@@ -1,0 +1,94 @@
+[
+    {
+        "title": "0736b Personal Website",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "SvelteKit, TailwindCSS"
+    },
+    {
+      "title": "Plastic Model Shop",
+      "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+      "link": "https://github.com/RiwEZ/Database-WebProject",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "tech": "React, Laravel, SQL, Docker"
+    },
+    {
+        "title": "Calabelle External",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python, WinAPI, ctypes"
+    },
+    {
+        "title": "C.A.R.I.N Simulation Game",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Java"
+    },
+    {
+        "title": "Blogs-site",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "MongoDB, Express, React, NodeJS"
+    },
+    {
+        "title": "MLP - Particle Swarm",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python"
+    },
+    {
+        "title": "Air Purifier Fuzzy",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python"
+    },
+    {
+        "title": "MLP - Genetic Algorithm",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python"
+    },
+    {
+        "title": "AOB Signature Maker",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python"
+    },
+    {
+        "title": "Cryptology",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "C++"
+    },
+    {
+        "title": "The eyes",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Processing"
+    },
+    {
+        "title": "Thetan Arena No Cooldown",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python, WinAPI, Pymem"
+    },
+    {
+        "title": "Killing Floor 2 Fast Leveling",
+        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+        "link": "https://github.com/RiwEZ/Database-WebProject",
+        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "tech": "Python, WinAPI, Pymem"
+    }
+
+  ]
