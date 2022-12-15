@@ -4,14 +4,11 @@
 	const { title, date, tags, Content } = data;
 </script>
 
-	<div class="container mx-auto max-w-3xl prose prose-neutral prose-pre:rounded-none font-rubik mb-20 mt-10 bg-[#D4D4D4] p-12">
-		<h1 class="font-bold mb-5 text-5xl">{title}</h1>
-		<div class="published-date">
-			<span class="bg-[#161616] text-[#D4D4D4] px-2">{format(new Date(date), 'EEEE, LLLL d, yyyy')}</span>
-		</div>
+	<div class="container mx-auto max-w-3xl prose prose-invert prose-pre:rounded-none font-robotomono mb-20 pb-20 mt-10 bg-[#662C92] text-[#D4D4D4] p-12">
+		<h1 class="uppercase font-rubik font-black text-5xl text-[#D4D4D4]">{title}</h1>
+		<span class="font-robotomono text-xl text-[#D4D4D4]">{format(new Date(date), 'LLLL d, yyyy')}</span>
 		<div class="tag">
-			<span class="bg-[#161616] text-[#D4D4D4] px-2">{tags}</span>
+			<span class="font-rubik px-2 text-sm bg-[#D4D4D4] text-[#662C92]">{tags}</span>
 		</div>
 		<Content/>
-		<!-- {Content} -->
 	</div>

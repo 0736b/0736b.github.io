@@ -18,7 +18,7 @@
     <h1 class="uppercase font-rubik text-xl mb-8 tracking-widest font-medium text-right">⬅  Skills</h1>
     <h1 class="uppercase font-rubik font-black text-6xl text-right mb-4">Technologies and Languages</h1>
     <h2 class="text-xl py-2"><span class="font-rubik font-bold text-2xl tracking-tighter">Languages </span> - <span class="font-robotomono font-bold text-lg"> C++, Java, Python, JavaScript, SQL, HTML, CSS</span></h2>
-    <h2 class="text-xl py-2"><span class="font-rubik font-bold text-2xl tracking-tighter">Frameworks </span> - <span class="font-robotomono font-bold text-lg"> React, Laravel, TailwindCSS, Bootstrap</span></h2>
+    <h2 class="text-xl py-2"><span class="font-rubik font-bold text-2xl tracking-tighter">Frameworks </span> - <span class="font-robotomono font-bold text-lg"> React, Laravel, Svelte, TailwindCSS, Bootstrap</span></h2>
     <h2 class="text-xl py-2"><span class="font-rubik font-bold text-2xl tracking-tighter">Tools </span> - <span class="font-robotomono font-bold text-lg"> Git, Docker, VMware, Figma, MS Word, MS PowerPoint, Photoshop, Lightroom</span></h2>
     <h2 class="text-xl"><span class="font-rubik font-bold text-2xl tracking-tighter"><span class="text-sm font-robotomono font-bold">(software reverse engineering.)</span></span> - <span class="font-robotomono font-bold text-sm"> x64dbg, dnSpy, HTTP Debugger, Cheat Engine</span></h2>
 </div>

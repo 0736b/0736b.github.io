@@ -19,7 +19,7 @@ html {
     width: 1000vw;
     height: 1000vh;
     content: "";
-    opacity: .03;
+    opacity: .04;
     z-index: 1000;
     pointer-events: none;
     background: url(noise.gif);
