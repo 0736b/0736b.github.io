@@ -5,13 +5,6 @@
 	export let data;
 </script>
 
-<!-- <div class="font-rubik">
-	<a href="/">Home</a>
-	<a href="/blog">Blog</a>
-	<a href="/">About</a>
-</div> -->
-
-
 <div class="container mx-auto max-w-3xl font-rubik text-xl text-center my-8 text-[#D4D4D4]">
 	<a href="/" class="font-thin italic lowercase px-4 tracking-tighter text-glow hover:text-white"><span class:font-bold={$page.url.pathname==='/'}><span class:underline={$page.url.pathname==='/'}>Home</span></span></a>
 	<a href="/blog" class="font-thin italic lowercase px-4 text-glow tracking-tighter hover:text-white"><span class:font-bold={$page.url.pathname.includes('/blog')}><span class:underline={$page.url.pathname.includes('/blog')}>Blog</span></span></a>

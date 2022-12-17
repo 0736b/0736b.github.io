@@ -22,7 +22,7 @@ html {
     opacity: .04;
     z-index: 1000;
     pointer-events: none;
-    background: url(noise.gif);
+    background: url(noise_opt.gif);
 }
 
 .project-grid {
