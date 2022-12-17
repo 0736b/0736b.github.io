@@ -4,7 +4,7 @@
     "src": "src/noise.gif"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-c94c42e6.js",
+    "file": "_app/immutable/start-8d05dd5a.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -96,12 +96,12 @@
     ]
   },
   "src/routes/blog/[slug]/+page.js": {
-    "file": "_app/immutable/modules/pages/blog/_slug_/_page.js-b726a5f7.js",
+    "file": "_app/immutable/modules/pages/blog/_slug_/_page.js-35c8d86e.js",
     "src": "src/routes/blog/[slug]/+page.js",
     "isEntry": true,
     "imports": [
       "_preload-helper-9b728935.js",
-      "__page-32fbe9f3.js"
+      "__page-1e2a36df.js"
     ]
   },
   "_singletons-bd41dc6b.js": {
@@ -132,13 +132,13 @@
   "__page-dce8d905.js": {
     "file": "_app/immutable/chunks/_page-dce8d905.js"
   },
-  "__page-32fbe9f3.js": {
-    "file": "_app/immutable/chunks/_page-32fbe9f3.js",
+  "__page-1e2a36df.js": {
+    "file": "_app/immutable/chunks/_page-1e2a36df.js",
     "imports": [
       "_preload-helper-9b728935.js"
     ],
     "dynamicImports": [
-      "src/routes/blog/setup-vm-for-game-hacking.md"
+      "src/routes/blog/setup-virtual-machine-for-game-hacking.md"
     ]
   },
   ".svelte-kit/generated/nodes/0.js": {
@@ -176,11 +176,11 @@
     ]
   },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-16422b04.js",
+    "file": "_app/immutable/chunks/4-5b76da8a.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-32fbe9f3.js",
+      "__page-1e2a36df.js",
       "src/routes/blog/[slug]/+page.svelte"
     ]
   },
@@ -192,9 +192,9 @@
       "src/routes/project/+page.svelte"
     ]
   },
-  "src/routes/blog/setup-vm-for-game-hacking.md": {
-    "file": "_app/immutable/chunks/setup-vm-for-game-hacking-221377fb.js",
-    "src": "src/routes/blog/setup-vm-for-game-hacking.md",
+  "src/routes/blog/setup-virtual-machine-for-game-hacking.md": {
+    "file": "_app/immutable/chunks/setup-virtual-machine-for-game-hacking-facec570.js",
+    "src": "src/routes/blog/setup-virtual-machine-for-game-hacking.md",
     "isDynamicEntry": true,
     "imports": [
       "_index-677aa875.js"

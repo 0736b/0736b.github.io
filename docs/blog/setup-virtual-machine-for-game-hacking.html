@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>0736b</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../riki_favi.jpg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/_layout-e0cfa311.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-8d05dd5a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-677aa875.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-bd41dc6b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-9b728935.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-dc319fcc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores-3f6582b5.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-872bd3f4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-80922366.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-5031e33e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-5804e728.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.js-35c8d86e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-1e2a36df.js">
+	</head>
+	<!-- bg-[#2637DE] text-[#D4D4D4] -->
+	<body data-sveltekit-preload-data="hover" class="bg-black noise scroll-smooth">
+		<div style="display: contents">
+
+
+
+
+
+<div class="container mx-auto max-w-3xl font-rubik text-xl text-center my-8 text-[#D4D4D4]"><a href="/" class="font-thin italic lowercase px-4 tracking-tighter text-glow hover:text-white"><span><span>Home</span></span></a>
+	<a href="/blog" class="font-thin italic lowercase px-4 text-glow tracking-tighter hover:text-white"><span class="font-bold"><span class="underline">Blog</span></span></a>
+	<a href="/project" class="font-thin italic lowercase px-4 text-glow tracking-tighter hover:text-white"><span><span>Project</span></span></a></div>
+  
+
+<main><div class="container mx-auto max-w-6xl font-rubik"><div class="container mx-auto max-w-3xl prose prose-invert prose-pre:rounded-none font-robotomono mb-20 pb-20 mt-10 bg-[#662C92] text-[#D4D4D4] p-12"><h1 class="uppercase font-rubik font-black text-5xl text-[#D4D4D4]">Setup virtual machine for game hacking</h1>
+		<span class="font-robotomono text-xl text-[#D4D4D4]">December 10, 2022</span>
+		<div class="tag"><span class="font-rubik px-2 text-sm bg-[#D4D4D4] text-[#662C92]">VMware, Windows</span></div>
+		<h3>Create a Virtual Machine on VMware</h3>
+<p>I’m using ReviOS’s Windows 10 Pro 1709 Optimized and Bloatware Removed version.
+Choose Custom Configuration from the list of options in the virtual machine creation section (advanced). The following are important parameters.</p>
+<ol><li>Firmware type: UEFI and Secure Boot disabled</li>
+<li>Network connection: NAT</li></ol>
+<p>Consider your resources when making adjustments to the processors, memory, and hard drive.</p>
+<p>After that, install Windows as usual.</p>
+<p><img src="/blog_imgs/1709-task-mgr.png" alt="1709-task-mgr"></p>
+<p>We now have a Windows virtual machine, and I’ve explained why I prefer Windows to ReviOS because it uses so little RAM. Only 0.7 GB of RAM is required for Fresh Install.</p>
+<h3>Post-Install</h3>
+<p>The next stage will be to install the apps and equipment required for game hacking after Windows has been installed.</p>
+<p>It’s crucial that we avoid installing VMware tools because some games won’t let us launch them if they detect that we are running a VM.</p>
+<p>For the reverse engineering game process, I installed these useful programs.</p>
+<h5>Programs list</h5>
+<ul><li>Browser: Brave</li>
+<li>File archiver: 7-Zip</li>
+<li>Debugger: x64dbg</li>
+<li>Disassembler: IDA Pro</li>
+<li>Kernel explorer: Windows Kernel Explorer (WKE)</li>
+<li>Anti-rootkit: OpenArk</li>
+<li>IDE and Code editor: VS 2019, VS Code, Lazarus, HxD, Notepad++</li></ul>
+<p>WKE and OpenArk are useful and practical programs. because the Reverse tab shows that we can access a lot of kernel and that OpenArk can download more reverse tools from within the software.</p>
+<p><img src="/blog_imgs/open-ark.png" alt="open-ark"></p>
+<p>Following the installation of these programs, we’ll deal with Patchguard, which will make it easy to load and test kernel drivers and includes the necessary kernel drivers that hide VMs and debuggers from games.</p>
+<h4>Disable PatchGuard and DSE with EfiGuard</h4>
+<p>I’m using EfiGuard <a href="https://github.com/Mattiwatti/EfiGuard" rel="nofollow">https://github.com/Mattiwatti/EfiGuard</a> which is a UEFI bootkit that will allow us to disable PatchGuard and toggle Driver Signature Enforcement (DSE)</p>
+<p>after we download <code>EfiGuard.zip</code>, when we open it we will found the file <code>EfiDSEFix.exe</code> and folder <code>EFI</code> then</p>
+<ol><li>Open Powershell (Run as admin)</li>
+<li>type the command <code>mountvol B: /S</code> for Mounts EFI system partition</li></ol>
+<p><img src="/blog_imgs/mountvol.png" alt="mountvol"></p>
+<p>You will see that Drive B: is displayed.</p>
+<ol start="3"><li>Go to <code>B:\EFI\Boot</code> and Copy <code>EfiGuardDxe.efi</code>, <code>Loader.efi</code> from <code>EfiGuard.zip\EFI\Boot\</code></li></ol>
+<p><img src="/blog_imgs/efi-copy1.png" alt="efi-copy"></p>
+<ol start="4"><li><p>Copy <code>EfiDSEFix.exe</code> from <code>EfiGuard.zip</code> paste it at <code>C:</code></p></li>
+<li><p>Now Restart VM and press the F2 key repeatly until you enter the Boot Manager</p></li></ol>
+<p><img src="/blog_imgs/boot-mgr.png" alt="boot-mgr"></p>
+<ol start="6"><li>go to <code>Enter setup → Configure boot options → Add boot option → select NO VOLUME LABEL → EFI → Boot</code> will found files <code>Loader.efi, EfiGuardDxe.efi</code></li></ol>
+<p><img src="/blog_imgs/efi-found.png" alt="efi-found"></p>
+<ol start="7"><li>press Enter select <code>Loader.efi</code> and enter Input the description <code>EfiGuard</code></li></ol>
+<p><img src="/blog_imgs/modify-efi.png" alt="modify-efi"></p>
+<ol start="8"><li><p>press <code>Commit changes and exit</code> will go back to Boot Manager</p></li>
+<li><p>Now go to <code>Configure boot options → Change boot order → Change the order → Move EfiGuard to the top</code></p></li></ol>
+<p><img src="/blog_imgs/boot-order.png" alt="boot-order"></p>
+<ol start="10"><li><p><code>Commit change</code> and <code>Exit boot manager → Shutdown</code></p></li>
+<li><p>Reopen the VM and if installed properly, you will see the EfiGuard Boot page as follows.</p></li></ol>
+<p><img src="/blog_imgs/efi-boot.png" alt="efi-boot"></p>
+<p>That’s all, now we can start and disable DSE through <code>EfiDSEFix.exe</code> to load and use the Unsigned driver.</p>
+<p>by typing</p>
+<pre class="language-powershell"><!-- HTML_TAG_START --><code class="language-powershell">EfiDSEFix<span class="token punctuation">.</span>exe <span class="token operator">-</span>d <span class="token punctuation">(</span><span class="token keyword">for</span> disable DSE<span class="token punctuation">)</span>
+EfiDSEFix<span class="token punctuation">.</span>exe <span class="token operator">-</span>e <span class="token punctuation">(</span><span class="token keyword">for</span> enable DSE<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+<p><img src="/blog_imgs/efi-check.png" alt="efi-check"></p>
+<h4>Hiding x64dbg with TitanHide</h4>
+<p>TitanHide is a driver to hide the debugger from the process. <a href="https://github.com/mrexodia/TitanHide" rel="nofollow">https://github.com/mrexodia/TitanHide</a></p>
+<p>Installation</p>
+<ol><li>Copy folder <code>Plugin</code> from <code>TitanHide.zip</code> to folder <code>x32/x64</code> in x64dbg directory</li>
+<li>Copy <code>TitanHide.sys</code> to <code>%systemroot%\system32\drivers</code></li>
+<li>Run the command <code>sc create TitanHide binPath= %systemroot%\system32\drivers\TitanHide.sys type= kernel</code> to create the TitanHide service</li>
+<li>Run the command <code>sc start TitanHide to start the TitanHide</code> service.</li></ol>
+<p><img src="/blog_imgs/titanhide-ins.png" alt="titanhide-ins"></p>
+<h4>Hiding VM with VMwareHardenedLoader</h4>
+<p>To hide VMware from some Anti-vm <a href="https://github.com/hzqst/VmwareHardenedLoader" rel="nofollow">https://github.com/hzqst/VmwareHardenedLoader</a></p></div></div></main>
+
+
+		<script type="module" data-sveltekit-hydrate="b387h2">
+			import { start } from "../_app/immutable/start-8d05dd5a.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="b387h2"]').parentNode,
+				version: "1671280317017",
+				hydrate: {
+					node_ids: [0, 4],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
