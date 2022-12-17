@@ -1,94 +1,72 @@
 [
     {
         "title": "0736b Personal Website",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/0736b-personal-web.JPG",
+        "link": "https://github.com/0736b/0736b.github.io",
+        "description": "My personal static website with markdown blog using SvelteKit, TailwindCSS, mdsvex, HTML, CSS.",
         "tech": "SvelteKit, TailwindCSS"
     },
     {
       "title": "Plastic Model Shop",
-      "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
+      "img_thumbnail": "/project_imgs/plastic-model-shop.png",
       "link": "https://github.com/RiwEZ/Database-WebProject",
-      "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+      "description": "Mini shopping web application. Frontend using ReactJS, TailwindCSS, Backend using Laravel interacting with database.",
       "tech": "React, Laravel, SQL, Docker"
     },
     {
         "title": "Calabelle External",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/calabelle-external.JPG",
+        "link": "https://github.com/0736b/Calabelle-External",
+        "description": "Cabal Online External cheat. I created this project while learning reverse engineering and windows api. Using ctypes library for calling windows api and read/write process memory. in Python",
         "tech": "Python, WinAPI, ctypes"
     },
     {
         "title": "C.A.R.I.N Simulation Game",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/carin.JPG",
+        "link": "https://github.com/RiwEZ/KitKatCARIN",
+        "description": "A simulation game of a battle between viruses and antibodies. Both of them act according to a specific genetic code using genetic code parser and interpreter.",
         "tech": "Java"
     },
     {
         "title": "Blogs-site",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/first-blog.JPG",
+        "link": "https://github.com/0736b/myblog",
+        "description": "My first blog website created while I learning MongoDB, Express, React, NodeJS for work together which is M.E.R.N Stack.",
         "tech": "MongoDB, Express, React, NodeJS"
     },
     {
         "title": "MLP - Particle Swarm",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/mlp-pso.JPG",
+        "link": "https://github.com/0736b/MLP-Particle-Swarm-Optimization",
+        "description": "Implementing Multilayer Perceptron from scratch and train with Particle Swarm Optimization. for prediction benzene concentration in the next 5th, 10th day.",
         "tech": "Python"
     },
     {
         "title": "Air Purifier Fuzzy",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/air-fuzzy.JPG",
+        "link": "https://github.com/0736b/Air-Purifier-Fuzzy",
+        "description": "Implementing fuzzy logic and simulation for Air Purifier.",
         "tech": "Python"
     },
     {
         "title": "MLP - Genetic Algorithm",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/mlp-ga.JPG",
+        "link": "https://github.com/0736b/MLP-Genetic-Algorithm",
+        "description": "Implementing Multilayer Perceptron and train with Genetic Algorithm. for classification with Winconsin Diagnostic Breat Cancer dataset.",
         "tech": "Python"
     },
     {
         "title": "AOB Signature Maker",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/aob-sig.JPG",
+        "link": "https://github.com/0736b/AoBSigMaker",
+        "description": "A tool to help create the signature of a array of bytes with GUI using Tkinter.",
         "tech": "Python"
     },
     {
-        "title": "Cryptology",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "tech": "C++"
-    },
-    {
         "title": "The eyes",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+        "img_thumbnail": "/project_imgs/the-eyes.gif",
+        "link": "https://github.com/0736b/generativeArts",
+        "description": "My first generative art using Processing 4.",
         "tech": "Processing"
-    },
-    {
-        "title": "Thetan Arena No Cooldown",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "tech": "Python, WinAPI, Pymem"
-    },
-    {
-        "title": "Killing Floor 2 Fast Leveling",
-        "img_thumbnail": "https://github.com/0736b/AoBSigMaker_GUI/raw/main/preview/AOBSigmaker.JPG",
-        "link": "https://github.com/RiwEZ/Database-WebProject",
-        "description": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-        "tech": "Python, WinAPI, Pymem"
     }
-
   ]
