@@ -17,5 +17,5 @@
 
 <div class="contact container mx-auto mb-32 max-w-3xl bg-[#2637DE] text-[#D4D4D4] px-14 py-6">
     <h1 class="uppercase text-right text-lg italic text-glow tracking-tighter hover:text-white"><a href="https://github.com/0736b" target="noreferrer"><span class="font-robotomono font-normal tracking-wide">github@</span><span class="font-bold text-xl">0736b</span></a></h1>
-    <h1 class="uppercase text-right text-lg italic text-glow tracking-tighter hover:text-white"><a href="mailto:boomf4rr3ll@gmail.com" target="noreferrer"><span class="font-bold">boomf4rr3ll</span><span class="font-robotomono font-normal tracking-wide">@gmail.com</span></a></h1>
+    <h1 class="uppercase text-right text-lg italic text-glow tracking-tighter hover:text-white"><a href="mailto:thanawat.bumpengpun@gmail.com" target="noreferrer"><span class="font-bold">thanawat.bumpengpun</span><span class="font-robotomono font-normal tracking-wide">@gmail.com</span></a></h1>
 </div>

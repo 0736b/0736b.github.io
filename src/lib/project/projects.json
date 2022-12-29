@@ -7,7 +7,7 @@
         "tech": "SvelteKit, TailwindCSS"
     },
     {
-      "title": "Plastic Model Shop",
+      "title": "Vehicle Model Shop",
       "img_thumbnail": "/project_imgs/plastic-model-shop.png",
       "link": "https://github.com/RiwEZ/Database-WebProject",
       "description": "Mini shopping web application. Frontend using ReactJS, TailwindCSS, Backend using Laravel interacting with database.",
@@ -26,6 +26,20 @@
         "link": "https://github.com/RiwEZ/KitKatCARIN",
         "description": "A simulation game of a battle between viruses and antibodies. Both of them act according to a specific genetic code using genetic code parser and interpreter.",
         "tech": "Java"
+    },
+    {
+        "title": "LINE-RUB-LINE-JAI",
+        "img_thumbnail": "/project_imgs/line-rub-line-jai.JPG",
+        "link": "https://github.com/0736b/LINE-RUB-LINE-JAI",
+        "description": "Simple LINE Chatbot for recording my personal expenses and save to google sheet.",
+        "tech": "Python, LINE SDK, Flask, Gspread"
+    },
+    {
+        "title": "Share-Me",
+        "img_thumbnail": "/project_imgs/share-me.JPG",
+        "link": "https://github.com/0736b/Share-Me",
+        "description": "Simple social media post sharing with Django.",
+        "tech": "Python, Django, jQuery, TailwindCSS"
     },
     {
         "title": "Blogs-site",
