@@ -6,8 +6,8 @@
 		<link rel="icon" href="../riki_favi.jpg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-090692d3.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-c167b6b9.js">
+		<link href="../_app/immutable/assets/_layout-f3143a0b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-97527637.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-677aa875.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-bd41dc6b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-9b728935.js">
@@ -15,10 +15,10 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/stores-3f6582b5.js">
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-872bd3f4.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-80922366.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-5031e33e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_slug_/_page.svelte-6f8eaad9.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-5804e728.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.js-35c8d86e.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-1e2a36df.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_slug_/_page.js-c5db942a.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-eb15bd6d.js">
 	</head>
 	<!-- bg-[#2637DE] text-[#D4D4D4] -->
 	<body data-sveltekit-preload-data="hover" class="bg-black noise scroll-smooth">
@@ -30,7 +30,7 @@
 	<a href="/project" class="font-thin italic lowercase px-4 text-glow tracking-tighter hover:text-white"><span><span>Project</span></span></a></div>
   
 
-<main><div class="container mx-auto max-w-6xl font-rubik"><div class="container mx-auto max-w-3xl prose prose-invert prose-pre:rounded-none font-robotomono mb-20 pb-20 mt-10 bg-[#662C92] text-[#D4D4D4] p-12"><h1 class="uppercase font-rubik font-black text-5xl text-[#D4D4D4]">Setup virtual machine for game hacking</h1>
+<main><div class="container mx-auto max-w-6xl font-rubik"><div class="container mx-auto max-w-3xl prose prose-invert prose-pre:rounded-none font-robotomono mb-20 pb-20 mt-10 bg-[#662C92] text-[#D4D4D4] p-12"><h1 class="uppercase font-rubik font-black text-3xl lg:text-5xl text-[#D4D4D4]">Setup virtual machine for game hacking</h1>
 		<span class="font-robotomono text-xl text-[#D4D4D4]">December 10, 2022</span>
 		<div class="tag"><span class="font-rubik px-2 text-sm bg-[#D4D4D4] text-[#662C92]">VMware, Windows</span></div>
 		<h3>Create a Virtual Machine on VMware</h3>
@@ -58,7 +58,7 @@ Choose Custom Configuration from the list of options in the virtual machine crea
 <p><img src="/blog_imgs/open-ark.png" alt="open-ark"></p>
 <p>Following the installation of these programs, we’ll deal with Patchguard, which will make it easy to load and test kernel drivers and includes the necessary kernel drivers that hide VMs and debuggers from games.</p>
 <h4>Disable PatchGuard and DSE with EfiGuard</h4>
-<p>I’m using EfiGuard <a href="https://github.com/Mattiwatti/EfiGuard" rel="nofollow">https://github.com/Mattiwatti/EfiGuard</a> which is a UEFI bootkit that will allow us to disable PatchGuard and toggle Driver Signature Enforcement (DSE)</p>
+<p>I’m using EfiGuard <a href="https://github.com/Mattiwatti/EfiGuard" rel="nofollow">EfiGuard</a> which is a UEFI bootkit that will allow us to disable PatchGuard and toggle Driver Signature Enforcement (DSE)</p>
 <p>after we download <code>EfiGuard.zip</code>, when we open it we will found the file <code>EfiDSEFix.exe</code> and folder <code>EFI</code> then</p>
 <ol><li>Open Powershell (Run as admin)</li>
 <li>type the command <code>mountvol B: /S</code> for Mounts EFI system partition</li></ol>
@@ -85,25 +85,25 @@ Choose Custom Configuration from the list of options in the virtual machine crea
 EfiDSEFix<span class="token punctuation">.</span>exe <span class="token operator">-</span>e <span class="token punctuation">(</span><span class="token keyword">for</span> enable DSE<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
 <p><img src="/blog_imgs/efi-check.png" alt="efi-check"></p>
 <h4>Hiding x64dbg with TitanHide</h4>
-<p>TitanHide is a driver to hide the debugger from the process. <a href="https://github.com/mrexodia/TitanHide" rel="nofollow">https://github.com/mrexodia/TitanHide</a></p>
+<p>TitanHide is a driver to hide the debugger from the process. <a href="https://github.com/mrexodia/TitanHide" rel="nofollow">TitanHide</a></p>
 <p>Installation</p>
-<ol><li>Copy folder <code>Plugin</code> from <code>TitanHide.zip</code> to folder <code>x32/x64</code> in x64dbg directory</li>
-<li>Copy <code>TitanHide.sys</code> to <code>%systemroot%\system32\drivers</code></li>
-<li>Run the command <code>sc create TitanHide binPath= %systemroot%\system32\drivers\TitanHide.sys type= kernel</code> to create the TitanHide service</li>
-<li>Run the command <code>sc start TitanHide to start the TitanHide</code> service.</li></ol>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">1. Copy folder &#96;Plugin&#96; from &#96;TitanHide.zip&#96; to folder &#96;x32/x64&#96; in x64dbg directory
+2. Copy &#96;TitanHide.sys&#96; to &#96;%systemroot%system32drivers&#96;
+3. Run the command &#96;sc create TitanHide binPath= %systemroot%system32driversTitanHide.sys type= kernel&#96; to create the TitanHide service
+4. Run the command &#96;sc start TitanHide to start the TitanHide&#96; service.</code><!-- HTML_TAG_END --></pre>
 <p><img src="/blog_imgs/titanhide-ins.png" alt="titanhide-ins"></p>
 <h4>Hiding VM with VMwareHardenedLoader</h4>
-<p>To hide VMware from some Anti-vm <a href="https://github.com/hzqst/VmwareHardenedLoader" rel="nofollow">https://github.com/hzqst/VmwareHardenedLoader</a></p></div></div></main>
+<p>To hide VMware from some Anti-vm <a href="https://github.com/hzqst/VmwareHardenedLoader" rel="nofollow">VMHardenedLoader</a></p></div></div></main>
 
 
-		<script type="module" data-sveltekit-hydrate="5llee4">
-			import { start } from "../_app/immutable/start-c167b6b9.js";
+		<script type="module" data-sveltekit-hydrate="t45wmg">
+			import { start } from "../_app/immutable/start-97527637.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="5llee4"]').parentNode,
-				version: "1672301478964",
+				target: document.querySelector('[data-sveltekit-hydrate="t45wmg"]').parentNode,
+				version: "1673812486625",
 				hydrate: {
 					node_ids: [0, 4],
 					data: [null,null],

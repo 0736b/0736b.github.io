@@ -45,7 +45,7 @@ Following the installation of these programs, we'll deal with Patchguard, which 
 
 #### Disable PatchGuard and DSE with EfiGuard
 
-I'm using EfiGuard https://github.com/Mattiwatti/EfiGuard which is a UEFI bootkit that will allow us to disable PatchGuard and toggle Driver Signature Enforcement (DSE)
+I'm using EfiGuard [EfiGuard](https://github.com/Mattiwatti/EfiGuard) which is a UEFI bootkit that will allow us to disable PatchGuard and toggle Driver Signature Enforcement (DSE)
 
 after we download `EfiGuard.zip`, when we open it we will found the file `EfiDSEFix.exe` and folder `EFI` then
 
@@ -98,19 +98,19 @@ EfiDSEFix.exe -e (for enable DSE)
 
 #### Hiding x64dbg with TitanHide
 
-TitanHide is a driver to hide the debugger from the process. https://github.com/mrexodia/TitanHide
+TitanHide is a driver to hide the debugger from the process. [TitanHide](https://github.com/mrexodia/TitanHide)
 
 Installation
-
+```
 1. Copy folder `Plugin` from `TitanHide.zip` to folder `x32/x64` in x64dbg directory
 2. Copy `TitanHide.sys` to `%systemroot%\system32\drivers`
 3. Run the command `sc create TitanHide binPath= %systemroot%\system32\drivers\TitanHide.sys type= kernel` to create the TitanHide service
 4. Run the command `sc start TitanHide to start the TitanHide` service.
-
+```
 ![titanhide-ins](/blog_imgs/titanhide-ins.png)
 
 #### Hiding VM with VMwareHardenedLoader
 
-To hide VMware from some Anti-vm https://github.com/hzqst/VmwareHardenedLoader
+To hide VMware from some Anti-vm [VMHardenedLoader](https://github.com/hzqst/VmwareHardenedLoader)
 
 
