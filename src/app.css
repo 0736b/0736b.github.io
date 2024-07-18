@@ -12,19 +12,6 @@ html {
     text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
 }
 
-/* .noise::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 1000vw;
-    height: 1000vh;
-    content: "";
-    opacity: .04;
-    z-index: 1000;
-    pointer-events: none;
-    background: url(noise_opt.gif);
-} */
-
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
