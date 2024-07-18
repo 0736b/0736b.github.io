@@ -1,7 +1,12 @@
 import { fetchMarkdownPosts } from '$lib/utils';
 import { json } from '@sveltejs/kit';
 
-export const GET = async () => {
+export const GET = async ({url, setHeaders, request}) => {
+
+	setHeaders({
+		"Cache-Control": "max-age=31536000"
+	})
+
 	const allPosts = await fetchMarkdownPosts();
 
 	const sortedPosts = allPosts.sort((a, b) => {
