@@ -7,7 +7,7 @@
 	{#each data.posts as post}
     <a href={post.path}>
 	<div class="p-4 border border-[#444444] hover:border-[#AAAAAA] transition-all">
-            <h1 class="uppercase font-bold text-xl lg:text-xl banner-active text-white">{post.meta.title}</h1>
+            <h1 class="uppercase font-bold text-xl lg:text-xl text-active text-white">{post.meta.title}</h1>
             <span class="font-rubik px-2 text-sm bg-[#D4D4D4] text-black">{post.meta.tags}</span>
             <p class="pt-4 text-sm md:text-md font-roboto">{post.meta.intro}</p>
             <h2 class="font-robotomono text-md pt-2">{format(new Date(post.meta.date), 'EEEE LLLL d, yyyy')}</h2>
