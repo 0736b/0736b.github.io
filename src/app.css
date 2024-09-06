@@ -12,6 +12,9 @@ html {
 .text-glow:hover {
     text-shadow: 0 0 80px rgba(255, 255, 255, 0.75), 0 0 32px rgba(255, 255, 255, 0.24);
 }
+.banner-active {
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.15), 0 0 32px rgba(255, 255, 255, 0.24);
+}
 
 .project-grid {
     display: grid;

@@ -11,7 +11,7 @@
 					<img class="h-48 w-48 object-cover mx-auto" src={project.img_thumbnail} alt="" />
 					<br/>
 					<a href={project.link} alt="project-link" target="noreferrer">
-						<h1 class="uppercase font-bold text-white text-xl lg:text-xl mb-2">{project.title} <span><img src="/blog_imgs/icons8-link-24.png" class="inline" alt="" /></span></h1>
+						<h1 class="text-active uppercase font-bold text-white text-xl lg:text-xl mb-2">{project.title} <span><img src="/blog_imgs/icons8-link-24.png" class="inline" alt="" /></span></h1>
 						
 					</a>
 					<span class="font-rubik px-2 text-sm bg-[#D4D4D422] text-[#D4D4D488]">{project.tech}</span>
