@@ -55,7 +55,6 @@
 </div> -->
 
 
-<div>
     <center class="container mx-auto max-w-3xl text-center mt-24">
         <pre class="text-[8px] md:text-[12px] text-white leading-none banner-active">
     <div>
@@ -63,7 +62,7 @@
                                                                                                         
        ██████████: ███:                                                                      ████       
        ██████████░ ███░ -                                                                    :████      
-          ████:   -███████░     ░███░███  ░██░████░    -████░███ ░███: ████ -███   -███████░ ███████:   
+          ████:   -███████░     ░███░███  ░██░████░    -████░███ ░███: ████ -███   -███████  ███████:   
           ████:   :█████████- -█████████ -██████████  :█████████ ░███░ ████ ░████ ░█████████ ███████░   
           ░███:   -████ ░███░ ████--████  ░███░ ████- ████ :████ ░███: ████  ████-████ ░███░  ████      
           ░███:   -███░ :███░ ████  ████  ░███: ░███- ███░  ████ ░███: ░███  ███░-███░ -███░  ████      
@@ -77,7 +76,7 @@
         </pre>
     </center>
     
-    <div class="container mx-auto max-w-3xl text-center text-[#D4D4D4] tracking-wide px-14 text-sm lg:text-md">
+    <div class="container mx-auto max-w-3xl text-center text-[#D4D4D4] font-roboto tracking-wide px-14 text-sm lg:text-md">
         <p>A recently graduated computer engineering student from Chiang Mai University.</p>
         <br>
         <p>I love developing software that makes life easier. Love the aesthetics of the user interface and great user experience. From time to time I enjoy software reverse engineering.</p>
@@ -85,7 +84,6 @@
     
     
     <div class="contact container mx-auto mb-32 max-w-3xl text-white px-14 py-14 italic">
-        <h1 class="text-[#D4D4D4] uppercase text-right text-sm lg:text-md text-glow tracking-tighter hover:text-white"><a href="https://github.com/0736b" target="noreferrer"><span class="font-robotomono font-normal tracking-wide">github@</span><span class="font-bold text-xl">0736b</span></a></h1>
-        <h1 class="text-[#D4D4D4] uppercase text-right text-sm lg:text-md text-glow tracking-tighter hover:text-white"><a href="mailto:thanawat.bumpengpun@gmail.com" target="noreferrer"><span class="font-bold">thanawat.bumpengpun</span><span class="font-robotomono font-normal tracking-wide">@gmail.com</span></a></h1>
+        <h1 class="text-[#D4D4D4] uppercase text-right text-sm lg:text-md text-glow tracking-tighter hover:text-white transition-all"><a href="https://github.com/0736b" target="noreferrer"><span class="font-robotomono font-normal tracking-wide">github@</span><span class="font-bold text-xl">0736b</span></a></h1>
+        <h1 class="text-[#D4D4D4] uppercase text-right text-sm lg:text-md text-glow tracking-tighter hover:text-white transition-all"><a href="mailto:thanawat.bumpengpun@gmail.com" target="noreferrer"><span class="font-bold">thanawat.bumpengpun</span><span class="font-robotomono font-normal tracking-wide">@gmail.com</span></a></h1>
     </div>
-</div>
