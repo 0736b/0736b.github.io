@@ -10,6 +10,15 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
+  // Check if the request is for a CSS or font file
+  if (
+    event.request.url.match(/\.css$/i) ||
+    event.request.url.match(/\.(woff|woff2|ttf|otf|eot)$/i)
+  ) {
+    // For CSS and fonts, always fetch from network
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request)
       .then((response) => {
