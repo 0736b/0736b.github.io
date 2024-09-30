@@ -6,17 +6,17 @@
 	import "../app.css";
 	export let data;
 
-	onMount(() => {
-		if (browser && 'serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/service-worker.js')
-			.then((registration) => {
-			console.log('ServiceWorker registration successful with scope: ', registration.scope);
-			})
-			.catch((error) => {
-			console.error('ServiceWorker registration failed: ', error);
-			});
-		}
-	});
+	// onMount(() => {
+	// 	if (browser && 'serviceWorker' in navigator) {
+	// 	navigator.serviceWorker.register('/service-worker.js')
+	// 		.then((registration) => {
+	// 		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	// 		})
+	// 		.catch((error) => {
+	// 		console.error('ServiceWorker registration failed: ', error);
+	// 		});
+	// 	}
+	// });
 </script>
 
 <div class="container mx-auto max-w-3xl font-rubik text-xl text-center my-8 text-[#D4D4D4]">
