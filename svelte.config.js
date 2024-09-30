@@ -14,14 +14,14 @@ const config = {
 		adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
-			// fallback: null,
-			fallback: 'index.html',
+			fallback: null,
+			// fallback: 'index.html',
 			precompress: false,
 			strict: true,
-			serviceWorker: {
-				register: false,
-				file: (filepath) => !/\.DS_Store/.test(filepath)
-			},
+			// serviceWorker: {
+			// 	register: false,
+			// 	file: (filepath) => !/\.DS_Store/.test(filepath)
+			// },
 		}),
 		// hydrate the <div id="svelte"> element in src/app.html
 		// target: "#svelte"
